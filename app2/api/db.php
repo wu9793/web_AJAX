@@ -154,5 +154,8 @@ function to($url){
 }
 
 $Student=new DB('students');
+$Class=new DB('classes');
+$ClassStudent=new DB('class_student');
+$GraduateSchool=new DB('graduate_school');
 
 ?>
