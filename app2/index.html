@@ -72,13 +72,14 @@
 
           //註冊modal的顯示事件
           $("#studentForm").on('show.bs.modal', () => {
-            $.get("./api/get_schools.php", (options) => {
+            $.get("./api/get_schools.php",{id}, (options) => {
               $("#schools").html(options)
             })
           })
 
           //觸發顯示
           stuModal.show("studentForm")
+          console.log('userId=>'+id)
         })
         break;
     }
